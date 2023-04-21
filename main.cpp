@@ -2,17 +2,15 @@
 using namespace std;
 
 int main() {
-   int n,m,b,c,d;
+   int n,y=1,x=1,m=0;
    cin >>n;
    if(n>=2) {
-      m=n;
-      b=n+m;
-      c=m+b;
-      d=b+c;
-      cout << m << endl;
-      cout << b << endl;
-      cout << c << endl;
-      cout << d << endl;
+      for(int i=1; i<=n; i++){
+         cout << y << endl;
+         y=m+x;
+         x=m;
+         m=y;
+      }
       
    }      
    else {
